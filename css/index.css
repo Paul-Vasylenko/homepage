@@ -18,6 +18,7 @@ html {
 	scroll-behavior: smooth;
 }
 body {
+	overflow-y: scroll;
 	font-family: 'Poppins', sans-serif;
 	color: #575859;
 	font-weight: 400;
@@ -26,7 +27,7 @@ body {
 }
 .header {
 	background: #fff5f5;
-	max-height: 1000px;
+	margin-bottom: 100px;
 }
 .container {
 	max-width: 1136px;
@@ -47,6 +48,7 @@ body {
 	border-radius: 8px;
 	position: relative;
 	margin-top: 100px;
+	max-width: 386px;
 }
 .quote img {
 	width: 75px;
@@ -101,4 +103,15 @@ body {
 	padding-left: 150px;
 	padding-top: 10px;
 	transition: all 1.5s;
+}
+
+.fixed img {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: fixed;
+	right: 25px;
+	bottom: 40px;
+	cursor: pointer;
+	border: 1px solid red;
 }
