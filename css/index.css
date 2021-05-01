@@ -1,0 +1,102 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Lato', sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	color: #575859;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 29px;
+}
+.header {
+	background: #fff5f5;
+	max-height: 1000px;
+}
+.container {
+	max-width: 1136px;
+	padding: 0;
+	margin: 0 auto;
+}
+.flex-div {
+	display: flex;
+}
+.header__title {
+	padding-top: 80px;
+	max-width: 400px;
+	text-align: center;
+}
+.quote {
+	background: #fff;
+	border-radius: 8px;
+	position: relative;
+	margin-top: 100px;
+}
+.quote img {
+	width: 75px;
+	position: absolute;
+	top: -2px;
+	left: -80px;
+}
+.header__subtitle {
+	font-size: 30px;
+	letter-spacing: normal;
+
+	padding: 20px;
+}
+.header__title span {
+	color: #3988ff;
+	text-decoration: underline;
+}
+.header__left {
+	position: relative;
+	margin-top: 40px;
+}
+.button {
+	padding-left: 0;
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: #3988ff;
+	text-align: center;
+	margin-top: 47px;
+	margin-left: 40px;
+	position: relative;
+	color: white;
+	text-decoration: none;
+}
+.button p {
+	padding-top: 16px;
+}
+.button:hover {
+	transition: all .4s;
+	color: #3988ff;
+	background-color: #f1dddd;
+}
+.header__button-title {
+	display: inline-block;
+	position: absolute;
+	top: 560px;
+	left: 115px;
+}
+.header__img {
+	opacity: 1;
+	padding-left: 150px;
+	padding-top: 10px;
+}
