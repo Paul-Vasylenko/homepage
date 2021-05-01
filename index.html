@@ -2,9 +2,113 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Résumé</title>
+    <link rel="stylesheet" href="https://binary-studio-academy.github.io/stage-2/assets/stylesheets/base.css">
+    <meta name="description" content="Michael Jackson is alive and is back">
+    <meta name="keywords" content="Michael Jackson, HTML, CSS, BSA21">
+    <meta name="author" content="Paul Vasylenko">
+    <link rel="mj" href="https://www.facebook.com/michaeljackson" type="text/html">
+	  <link rel="mj" href="https://www.michaeljackson.com/">
+	  <link rel="mj" href="https://www.instagram.com/michaeljackson/?hl=ru">
+    <link rel="mj" href="https://www.youtube.com/michaeljackson">
+    <meta property="og:url" content="https://paul-vasylenko.github.io/homepage/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Jackson - alive???</title>
   </head>
   <body>
-    ― Hello World! &#x1F609;
+    <div class="header">
+      <div class="container">
+        <div class="flex-div">
+
+          <div class="header__left">
+            <h2 class="header__title">
+              King of Pop is<br> <span>BACK</span> 
+              <!-- I would be so happy if that was true :( -->
+            </h2>
+            
+            <div class="quote">
+              <img src="images/Quotes_icon.svg" alt="">
+              <h3 class="header__subtitle">Jackson: "I am alive and ready to give the last concert!"</h3>
+            </div>
+            <a href="#slider" class="button"><p>Go!</p></a>
+            <p class="header__button-title">Read the interview</p>
+          </div>
+          <div class="header__right">
+            <img class="header__img" src="images/jackson_side.png" alt="">
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="slider" id ="slider">
+      <div class="container">
+        <h2 class="title">Exclusive: Michael Jackson gives an interview after so long!</h2>
+        <div class="slider-container">
+            <div class="slide">
+              <h3 class="question">Michael, were you really guilty in child molestation charges?</h3>
+              <p class="answer">Oh, dear. It's really hard for me to talk about it and all these people who say so know that too. I had a very difficult childhood, and I would never do harm to my children. I don't want them to think about me the way I thought about father of mine.</p>
+            </div>
+            <div class="slide">
+              <h3 class="question">How many plastic operations did you have?</h3>
+              <p class="answer">I don't understand the way people think about the appearance of others. Why did they make me guilty for my skin being changed because of an illness? Aren't they go to the beaches to have themselves sunbathed and change their skin?
+                I had some operations on my nose, hair, eyebrows. But there are no tens of them, that people say. Don't believe the press.</p>
+            </div>
+            <div class="slide">
+              <h3 class="question">Did you forgive your father?</h3>
+              <p class="answer">it was very difficult for me to do it, but I did forget him. He killed my childhood, he stole my brothers` childhood, but I forgive him. Just look on the result of his action. Look at me. I am happy of what I am. I really want to just.. like.. hug him and call him "daddy", but he angers and says "I am Joseph for you.". I am so envious of those children who had such a nice childhood. I would never do so with my children.</p>
+            </div>
+            <div class="slide">
+              <h3 class="question">Are you still dancing?
+              </h3>
+              <p class="answer">Oh, nah. Yes, sometimes I dance, just because i feel music and it is a part of my life. But now I don't have much strength to dance as I was 20 or 30 y.o.</p>
+            </div>
+            <div class="slide">
+              <h3 class="question">Do you like your own music?</h3>
+              <p class="answer">If I didn't - I wouldn't get a success at all, I'm sure.</p>
+            </div>
+            <div class="slide">
+              <h3 class="question">And now the question we are here for: How are you still alive and why did you invented your death?</h3>
+              <p class="answer">I was so tired of all this fame. I was very weak because of medical addiction and all of these courts and everything.. I could continue living at home on the money my relatives earned, but I wanted to make history one more time.
+                that's why I announced a new tour "this is it". I was really preparing for it, and I was even going to perform some concerts, but once I got really bad. My doctor said that I wouldn't be able to perform at all for the next 3 months at least. That's why we started out plan of fake death earlier.
+                I really appreciate fans who were thinking about me being alive living somewhere else with a changed appearance... And really, these people are the only one reason why I'm here talking to you, giving an interview about me being alive, lol)</p>
+            </div>
+            <div class="slide">
+              <h3 class="question">Are you going to perform?</h3>
+              <p class="answer">Not a big scene for sure. Maybe I will give one online perfomance from my house without any effects, just a tiny show of my best songs for my closest fans, and that all.</p>
+            </div>
+            <div class="slide">
+              <h3 class="question">Have you overcome your addiction and pain?</h3>
+              <p class="answer">Yes. Now I am a completely healthy person, but I'm still 60 y.o.</p>
+            </div>
+            <div class="slide">
+              <h3 class="question">Do you love yourself now?</h3>
+              <p class="answer">Oh.. In past I always used to say "I'm never satisfied of myself", I can do better. I looked at myself in the mirror and I didn't like the way I looked. Now, when I am feeling freedom -- I've started to love myself. I really enjoy the life and the way I lived the live.</p>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div style="text-align: center">
+          <span class="dot active" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+          <span class="dot" onclick="currentSlide(9)"></span>
+        </div>
+        <!-- THE MOST USEFULL WEBSITE IN THE WORLD IS... -->
+        
+      </div>
+    </div>
+    <div class="fixed">
+      <img class= "fixed__img" src="images/jackson_icon2.png" alt="">
+    </div>
+    <span class="hide__text" onclick="hideText()">></span>
+    <span   class="show__text" onclick="showText()"><</span>
+    <h3 class="fixed__text"> Watch the full interview on our <a href="https://hemansings.com/">Youtube!</a></h3>
+    <script src="js/index.js"></script>
   </body>
 </html>
