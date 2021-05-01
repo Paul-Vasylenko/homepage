@@ -11,6 +11,24 @@ soundBtn.addEventListener('click', soundWork)
 
 function soundWork(){
     let num = Math.round(Math.random() * 4);
+    let timeout;
+    switch(num){
+        case 0:
+            timeout=1000;
+            break;
+        case 1:
+            timeout=1200;
+            break;
+        case 2:
+            timeout=1000;
+            break;
+        case 3:
+            timeout=4000;
+            break;
+        case 4:
+            timeout=1000;
+            break;
+    }
     let path = "../audio/" + sounds[num];
     let sound = new Audio(path);
     sound.play();
@@ -20,7 +38,7 @@ function soundWork(){
     setTimeout(()=>{
         soundBtn.style.pointerEvents =  "auto";
         soundImg.style.border = "1px solid red"
-    },3900)
+    },timeout)
 }
 
 
