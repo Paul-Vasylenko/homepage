@@ -42,6 +42,7 @@ body {
 	text-align: center;
 }
 .quote {
+	border: 0.05em solid black;
 	background: #fff;
 	border-radius: 8px;
 	position: relative;
