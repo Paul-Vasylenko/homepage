@@ -133,6 +133,7 @@ body {
 	right: 530px;
 	bottom: 16px;
 	font-size: 40px;
+	cursor: pointer;
 }
 .show__text {
 	position: fixed;
@@ -140,9 +141,10 @@ body {
 	bottom: 10px;
 	font-size: 40px;
 	display: none;
+	cursor: pointer;
 }
 .slide {
-	width: 900px;
+	width: 100%;
 	display: none;
 	background: #fff5f5;
 	padding: 20px;
@@ -179,6 +181,8 @@ body {
 }
 .slider-container {
 	position: relative;
+	margin: 0 auto;
+	width: 900px;
 }
 .prev,
 .next {
@@ -195,7 +199,7 @@ body {
 	user-select: none;
 }
 .next {
-	right: 195px;
+	right: -39px;
 }
 .prev {
 	left: -40px;
