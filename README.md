@@ -4,7 +4,7 @@ It was fake death for him to live a normal life for a while. Imagine that he was
 
 On this website you can find:
 - [x] Real interview with Micahel Jackson, who talked to me(FAKE)
-- [x] Link to our video-version of this interview (omegalol :3)
+- [x] Link to our video-version of this interview (omegalol :3):joy:
 - [x] Button in the right bottom corner that makes random Michael Jackson sounds like "He-heee" or "shamone"
 - [x] Timeline of MJ. Scroll the bar and check every year.
 - [x] Block with his best songs, hover on a block and listen to best parts of hits such as "Billie Jean", "Smooth Criminal", "Dangerous", "Rock with you", "Slave to the Rhythm", "Remember the Time"
