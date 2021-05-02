@@ -46,8 +46,8 @@ body {
 .header__title::before {
 	content: "👑";
 	position: absolute;
-	top: 50px;
-	left: -2px;
+	top: 80px;
+	left: 10px;
 	font-size: 28px;
 }
 .quote {
@@ -131,15 +131,15 @@ body {
 }
 .hide__text {
 	position: fixed;
-	right: 530px;
-	bottom: 16px;
+	right: 540px;
+	bottom: 15px;
 	font-size: 40px;
 	cursor: pointer;
 }
 .show__text {
 	position: fixed;
 	right: 10px;
-	bottom: 10px;
+	bottom: 15px;
 	font-size: 40px;
 	display: none;
 	cursor: pointer;
