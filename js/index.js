@@ -85,3 +85,31 @@ function showText(){
     const showbtn = document.querySelector(".show__text");
     showbtn.style.display="none";
 }
+
+
+const slideValue = document.querySelector(".rangeValue span");
+const inputSlide = document.querySelector(".field input");
+const infoDate = document.querySelector(".info__date");
+infoDate.innerText = inputSlide.value;
+
+inputSlide.oninput = (()=>{
+    let value = inputSlide.value;
+    slideValue.textContent = value;
+    slideValue.style.left = 8.3 + Math.abs((1958-value)*1.32) + "%";
+    infoDate.innerText = inputSlide.value;
+
+
+    const newInfo = "d"+value;
+    const toDisplay = document.getElementsByClassName(newInfo);
+    const dates = document.getElementsByClassName("date");
+    for(date of dates){
+        date.style.display = "none";
+    }
+    if(toDisplay.length!=0){
+        for(info of toDisplay){
+            info.style.display="block";
+        }
+    }
+    
+})
+
