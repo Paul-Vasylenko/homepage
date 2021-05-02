@@ -85,3 +85,12 @@ function showText(){
     const showbtn = document.querySelector(".show__text");
     showbtn.style.display="none";
 }
+
+
+const slideValue = document.querySelector(".rangeValue span");
+const inputSlide = document.querySelector(".field input");
+inputSlide.oninput = (()=>{
+    let value = inputSlide.value;
+    slideValue.textContent = value;
+    slideValue.style.left = 8.3 + Math.abs((1958-value)*1.32) + "%";
+})
