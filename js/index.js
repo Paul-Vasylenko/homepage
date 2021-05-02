@@ -29,7 +29,7 @@ function soundWork(){
             timeout=1000;
             break;
     }
-    let path = "../audio/" + sounds[num];
+    let path = "audio/" + sounds[num];
     let sound = new Audio(path);
     sound.play();
     const soundImg = document.querySelector(".fixed__img");
