@@ -29,7 +29,7 @@ function soundWork(){
             timeout=1000;
             break;
     }
-    let path = "../audio/" + sounds[num];
+    let path = "audio/" + sounds[num];
     let sound = new Audio(path);
     sound.play();
     const soundImg = document.querySelector(".fixed__img");
@@ -84,4 +84,70 @@ function showText(){
     hidebtn.style.display="block";
     const showbtn = document.querySelector(".show__text");
     showbtn.style.display="none";
+}
+
+
+const slideValue = document.querySelector(".rangeValue span");
+const inputSlide = document.querySelector(".field input");
+const infoDate = document.querySelector(".info__date");
+infoDate.innerText = inputSlide.value;
+
+inputSlide.oninput = (()=>{
+    let value = inputSlide.value;
+    slideValue.textContent = value;
+    slideValue.style.left = 8.3 + Math.abs((1958-value)*1.32) + "%";
+    infoDate.innerText = inputSlide.value;
+
+
+    const newInfo = "d"+value;
+    const toDisplay = document.getElementsByClassName(newInfo);
+    const dates = document.getElementsByClassName("date");
+    for(date of dates){
+        date.style.display = "none";
+    }
+    if(toDisplay.length!=0){
+        for(info of toDisplay){
+            info.style.display="block";
+        }
+    }
+    
+})
+
+const classes = ["billie_jean","dangerous","remember_the_time","rock_with_you",
+"slave_to_the", "smooth_criminal","the_way_you_make","thriller","who_is_it"];
+const audiosStr = ["songs/billie_jean.mp3","songs/dangerous.mp3",
+"songs/remember_the_time.mp3","songs/rock_with_you.mp3","songs/slave_to_the.mp3",
+"songs/smooth_criminal.mp3","songs/the_way_you_make.mp3","songs/thriller.mp3",
+"songs/who_is_it.mp3"]
+const audios = [new Audio("songs/billie_jean.mp3"),new Audio("songs/dangerous.mp3"),
+new Audio("songs/remember_the_time.mp3"),new Audio("songs/rock_with_you.mp3"),new Audio("songs/slave_to_the.mp3"),
+new Audio("songs/smooth_criminal.mp3"),new Audio("songs/the_way_you_make.mp3"),new Audio("songs/thriller.mp3"),
+new Audio("songs/who_is_it.mp3")]
+
+
+const musics = document.querySelectorAll(".song");
+for(let musicblock of musics){
+   musicblock.onclick = ()=>{
+       for(let item of classes){
+        for(let i=0;i<9;i++){
+        document.querySelector(".song."+item+" .song-bg").style.opacity=0.6;
+        document.querySelector(".song."+item+" img").style.opacity=0.2;
+        document.querySelector(".song."+item+" .song-name").style.color = "inherit";
+        }
+           if(musicblock.classList.contains(item)){
+               let toPlay;
+               for(let i=0;i<9;i++){
+                   if(audiosStr[i].includes(item)){
+                    document.querySelector(".song."+item+" .song-bg").style.opacity=0;
+                    document.querySelector(".song."+item+" img").style.opacity=1;
+                    document.querySelector(".song."+item+" .song-name").style.color = "#3988ff";
+                    toPlay=audios[i];
+                   }else{
+                        audios[i].pause();
+                   }
+                }
+                toPlay.play();
+           }
+       }
+   }
 }
