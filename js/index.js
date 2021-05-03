@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
     setTimeout(()=>{
         const jacksonImg = document.querySelector(".header__img");
-        jacksonImg.style.opacity = 1;
+        jacksonImg.style.opacity = 0.6;
     }, 200)
 })
 
@@ -91,11 +91,19 @@ const slideValue = document.querySelector(".rangeValue span");
 const inputSlide = document.querySelector(".field input");
 const infoDate = document.querySelector(".info__date");
 infoDate.innerText = inputSlide.value;
-
 inputSlide.oninput = (()=>{
     let value = inputSlide.value;
     slideValue.textContent = value;
-    slideValue.style.left = 8.3 + Math.abs((1958-value)*1.32) + "%";
+    if(window.screen.width>=1360){
+        slideValue.style.left = 8.3 + Math.abs((1958-value)*1.32) + "%";
+    }
+    else if(window.screen.width>=1150){
+        slideValue.style.left = 9.9 + Math.abs((1958-value)*1.27) + "%";
+    }
+    else if(window.screen.width>=1000){
+        slideValue.style.left = 9.9 + Math.abs((1958-value)*1.27) + "%";
+    }
+    
     infoDate.innerText = inputSlide.value;
 
 
