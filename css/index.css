@@ -453,15 +453,15 @@ ul li::before {
 	pointer-events: none;
 }
 
-.song:hover .song-bg {
+.song img:hover .song-bg {
 	opacity: 0;
 	transition: all .3s;
 }
-.song:hover img {
+.song img:hover img {
 	transition: all .3s;
 	opacity: 1;
 }
-.song:hover .song-name {
+.song img:hover .song-name {
 	color: #3988ff;
 }
 .song h3 {

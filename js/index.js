@@ -136,6 +136,7 @@ new Audio("songs/who_is_it.mp3")]
 const musics = document.querySelectorAll(".song");
 for(let musicblock of musics){
    musicblock.onclick = ()=>{
+       
        for(let item of classes){
         for(let i=0;i<9;i++){
         document.querySelector(".song."+item+" .song-bg").style.opacity=0.6;
@@ -157,5 +158,15 @@ for(let musicblock of musics){
                 toPlay.play();
            }
        }
+   }
+   musicblock.onmouseover = (e) => {
+    const div = e.srcElement;
+    const divClasses = div.classList;
+    const domDivImg = document.querySelector(".song."+divClasses[1]+" img");
+    domDivImg.style.opacity=0.8;
+    const domDivBg = document.querySelector(".song."+divClasses[1]+" .song-bg");
+    domDivBg.style.opacity=0;
+    const domDivP = document.querySelector(".song."+divClasses[1]+" h3");
+    domDivP.style.color = "#3988ff"; 
    }
 }
