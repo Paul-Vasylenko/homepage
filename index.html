@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://binary-studio-academy.github.io/stage-2/assets/stylesheets/base.css">
-    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
     <meta name="description" content="Michael Jackson is alive and is back">
     <meta name="keywords" content="Michael Jackson, HTML, CSS, BSA21">
     <meta name="author" content="Paul Vasylenko">
@@ -12,8 +12,7 @@
 	  <link rel="mj" href="https://www.instagram.com/michaeljackson/?hl=ru">
     <link rel="mj" href="https://www.youtube.com/michaeljackson">
     <meta property="og:url" content="https://paul-vasylenko.github.io/homepage/">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Michael Jackson - alive???</title>
   </head>
   <body>
@@ -23,7 +22,7 @@
 
           <div class="header__left">
             <h2 class="header__title">
-              King of Pop is<br> <span>BACK</span> 
+              King of Pop is<br> <strong><span>BACK</span></strong>  
               <!-- I would be so happy if that was true :( -->
             </h2>
             
@@ -31,12 +30,346 @@
               <img src="images/Quotes_icon.svg" alt="">
               <h3 class="header__subtitle">Jackson: "I am alive and ready to give the last concert!"</h3>
             </div>
-            <a href="#" class="button"><p>Go!</p></a>
+            <a href="#slider" class="button"><p>Go!</p></a>
             <p class="header__button-title">Read the interview</p>
           </div>
           <div class="header__right">
             <img class="header__img" src="images/jackson_side.png" alt="">
           </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="slider" id ="slider">
+      <div class="container">
+        <h2 class="slider__title">Exclusive: Michael Jackson gives an interview after so long!</h2>
+        <div class="slider-container">
+            <div class="slide">
+              <h3 class="question">Michael, were you really guilty in child molestation charges?</h3>
+              <p class="answer">Oh, dear. It's really hard for me to talk about it and all these people who say so know that too. I had a very difficult childhood, and I would never do harm to my children. I don't want them to think about me the way I thought about father of mine.</p>
+            </div>
+            <div class="slide">
+              <h3 class="question">How many plastic operations did you have?</h3>
+              <p class="answer">I don't understand the way people think about the appearance of others. Why did they make me guilty for my skin being changed because of an illness? Aren't they go to the beaches to have themselves sunbathed and change their skin?
+                I had some operations on my nose, hair, eyebrows. But there are no tens of them, that people say. Don't believe the press.</p>
+            </div>
+            <div class="slide">
+              <h3 class="question">Did you forgive your father?</h3>
+              <p class="answer">it was very difficult for me to do it, but I did forget him. He killed my childhood, he stole my brothers` childhood, but I forgive him. Just look on the result of his action. Look at me. I am happy of what I am. I really want to just.. like.. hug him and call him "daddy", but he angers and says "I am Joseph for you.". I am so envious of those children who had such a nice childhood. I would never do so with my children.</p>
+            </div>
+            <div class="slide">
+              <h3 class="question">Are you still dancing?
+              </h3>
+              <p class="answer">Oh, nah. Yes, sometimes I dance, just because i feel music and it is a part of my life. But now I don't have much strength to dance as I was 20 or 30 y.o.</p>
+            </div>
+            <div class="slide">
+              <h3 class="question">Do you like your own music?</h3>
+              <p class="answer">If I didn't - I wouldn't get a success at all, I'm sure.</p>
+            </div>
+            <div class="slide">
+              <h3 class="question">And now the question we are here for: How are you still alive and why did you invented your death?</h3>
+              <p class="answer">I was so tired of all this fame. I was very weak because of medical addiction and all of these courts and everything.. I could continue living at home on the money my relatives earned, but I wanted to make history one more time.
+                that's why I announced a new tour "this is it". I was really preparing for it, and I was even going to perform some concerts, but once I got really bad. My doctor said that I wouldn't be able to perform at all for the next 3 months at least. That's why we started out plan of fake death earlier.
+                I really appreciate fans who were thinking about me being alive living somewhere else with a changed appearance... And really, these people are the only one reason why I'm here talking to you, giving an interview about me being alive, lol)</p>
+            </div>
+            <div class="slide">
+              <h3 class="question">Are you going to perform?</h3>
+              <p class="answer">Not a big scene for sure. Maybe I will give one online perfomance from my house without any effects, just a tiny show of my best songs for my closest fans, and that all.</p>
+            </div>
+            <div class="slide">
+              <h3 class="question">Have you overcome your addiction and pain?</h3>
+              <p class="answer">Yes. Now I am a completely healthy person, but I'm still 60 y.o.</p>
+            </div>
+            <div class="slide">
+              <h3 class="question">Do you love yourself now?</h3>
+              <p class="answer">Oh.. In past I always used to say "I'm never satisfied of myself", I can do better. I looked at myself in the mirror and I didn't like the way I looked. Now, when I am feeling freedom -- I've started to love myself. I really enjoy the life and the way I lived the live.</p>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div style="text-align: center">
+          <span class="dot active" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+          <span class="dot" onclick="currentSlide(9)"></span>
+        </div>
+        <!-- THE MOST USEFULL WEBSITE IN THE WORLD IS... -->
+        
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="container">
+        <h2 class="timeline__title">~TIMELINE OF JACKSON~</h2>
+
+        <div class="timeline__block">
+
+          <p class="info_timeline birth">Birth</p>
+          <p class="info_timeline now">Nowadays</p>
+          <div class="rangeValue">
+            <span>1958</span>
+          </div>
+          <div class="field">
+            <div class="value left">1958</div>
+            <input type="range" min="1958" max="2021" value="1958" steps="1">
+            <div class="value right">2021</div>
+          </div>
+          <p class="add one"> KING OF POP</p>
+          <p class="add two"> PERSONAL<br> TRIALS</p>
+          <p class="add three"> DRAMA</p>
+          <p class="add four"> DEATH</p>
+          <div class="timeline__info">
+            <div class="info__date">
+              
+            </div>
+            <ul class="info__events">
+              <li class="date d1958">
+                Born Aug. 29 in Gary, Ind. He is the seventh child of Joseph and Katherine Esther Jackson.
+              </li>
+              <li class="date d1959">
+                Early years. Childhood.
+              </li>
+              <li class="date d1960">
+                Early years. Childhood.
+              </li>
+              <li class="date d1961">
+                Early years. Childhood.
+              </li>
+              <li class="date d1962">
+                Early years. Childhood.
+              </li>
+              <li class="date d1963">
+                Early years. Childhood.
+              </li>
+              <li class="date d1964">
+                Early years. Childhood.
+              </li>
+              <li class="date d1965">
+                Early years. Childhood.
+              </li>
+              <li class="date d1966">
+                Early years. Childhood.
+              </li>
+              <li class="date d1967">
+                Early years. Childhood.
+              </li>
+              <li class="date d1968">
+                Early years. Childhood.
+              </li>
+              <li class="date d1969">
+                In Los Angeles, the Jackson 5 debut as Motown’s newest act.<br>
+
+                In December, the group’s single “I Want You Back” hits No. 1 on the Billboard Top 40 Chart.
+              </li>
+              <li class="date d1970">
+                Jackson 5 hits “ABC, “The Love You Save” and “I’ll Be There” all reach No. 1 on Billboard charts.<br>
+              </li>
+              <li class="date d1971">
+                In May 1971, the Jackson family moved into a large house on a two-acre estate in Encino, California.[41] During this period, Michael developed from a child performer into a teen idol
+              </li>
+              <li class="date d1972">
+                First No. 1 solo hit “Ben,” a song about a movie rat.
+              </li>
+              <li class="date d1973">
+                Release of solo album "Music & Me"
+              </li>
+              <li class="date d1974">
+                Introduces a dance step called the robot on “Soul Train.” The step sweeps the country.
+              </li>
+              <li class="date d1975">
+                Release of solo album "Forever, Michael"
+              </li>
+              <li class="date d1976">
+                Works on album "Shake Your Body (Down to the Ground)"
+              </li>
+              <li class="date d1977">
+                Works on album "Shake Your Body (Down to the Ground)"
+              </li>
+              <li class="date d1978">
+                Played “The Scarecrow” in the movie musical “The Wiz,” alongside Diana Ross, Richard Pryor and Nipsey Russell.
+              </li>
+              <li class="date d1979">
+                Jackson’s “Off the Wall” solo album catapults him to superstar status.
+              </li>
+              <li class="date d1980">
+                Albums "This Place Hotel" and "Can You Feel It" (1980)
+              </li>
+              <li class="date d1981">
+                Jackson was the American Music Awards winner for Favorite Soul/R&B Album and Favorite Soul/R&B Male Artist.[62] Jackson felt Off the Wall should have made a bigger impact, and was determined to exceed expectations with his next release
+              </li>
+              <li class="date d1982">
+                “Thriller” is released, eventually selling more than 100 million copies. It makes Jackson the biggest pop music star of the decade. The record becomes one of the best-selling albums of all time.
+              </li>
+              <li class="date d1983">
+                “Beat It” reaches No. 1 on the charts.<br>
+                “Billie Jean” also becomes a gigantic hit, and the influential video, featuring more of Jackson’s electric dancing, remains a landmark.
+
+                <br>“Motown 25: Yesterday, Today, Forever,” airs on NBC. After a memorable performance by “The Jacksons,” Michael wows the crowd with a rendition of “Billie Jean,” which included the jaw-dropping moonwalk.
+
+                <br>The high-concept, 13-minute “Thriller” video, directed by John Landis, becomes a huge sensation.
+              </li>
+              <li class="date d1984">
+                Jackson’s hair catches on fire during filming of a Pepsi commercial.
+              </li>
+              <li class="date d1985">
+                His charitable work continued with the release of "We Are the World" (1985), co-written with Lionel Richie,[97] which raised money for the poor in the US and Africa.
+              </li>
+              <li class="date d1986">
+                He diagnosed Jackson with lupus that year, and with vitiligo in 1986
+              </li>
+              <li class="date d1987">
+                News reports say Jackson tries to buy the skeleton of the <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D1%80%D1%80%D0%B8%D0%BA,_%D0%94%D0%B6%D0%BE%D0%B7%D0%B5%D1%84#%D0%94%D0%B6%D0%BE%D0%B7%D0%B5%D1%84_%D0%9C%D0%B5%D1%80%D1%80%D0%B8%D0%BA_%D0%B2_%D0%BF%D0%BE%D0%BF-%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%B5">“Elephant Man.”</a> The album “Bad” is released and sells more than 8 million copies.
+              </li>
+              <li class="date d1988">
+                Michael Jackson donates $125,000 from a concert at the Palace of Auburn Hills, Mich., and some personal memorabilia to start off a fundraising drive to preserve and improve the Motown Historical Museum.
+                <br> Releases “Moonwalk,” an autobiography.
+              </li>
+              <li class="date d1991">
+                Releases “Dangerous” album, certified for 7 million in sales.
+              </li>
+              <li class="date d1993">
+                In his first TV interview in 14 years, Jackson tells Oprah Winfrey that the change in his skin complexion is from a disorder called vitiligo.
+                <br>
+                A lawsuit claims that Jackson seduced and abused a 13-year-old boy.
+              </li>
+              <li class="date d1994">
+                Settles the lawsuit with substantial payment to the plaintiff. Los Angeles and Santa Barbara district attorneys don’t file child molestation charges against him.
+                <br>
+                Marries Lisa Marie Presley, daughter of Elvis Presley.
+              </li>
+              <li class="date d1996">
+                Presley files for divorce.
+                <br>
+                Jackson marries nurse Debbie Rowe.
+              </li>
+              <li class="date d1997">
+                Rowe gives birth to son Prince Michael.
+                <br>
+                The Jackson 5 are inducted into the Rock and Roll Hall of Fame.
+              </li>
+              <li class="date d1998">
+                Rowe gives birth to daughter Paris Michael Katherine.
+              </li>
+              <li class="date d2001">
+                The “Invincible” album is released with a respectable 2.1 million copies sold, but only two minor hits.
+              </li>
+              <li class="date d2002">
+                Third child, Prince Michael II is born.
+              </li>
+              <li class="date d2003">
+                Faces charges of child molestation. Posts $3 million in bail and throws up the “V” sign, while standing on a black Suburban, before leaving the courthouse in Santa Maria, Calif.
+              </li>
+              <li class="date d2004">
+                Jackson pleads not guilty to child molestation charges in January.
+              </li>
+              <li class="date d2005">
+                In June, Jackson was acquitted of child molestation charges.
+              </li>
+              <li class="date d2009">
+                Announsed the last wourld tour "This Is It". Tickets for only 50 concert in London were sold by 2 weeks.
+                <br> Passed away.
+              </li>
+              <li class="date d2010">
+                Still is a King of Music, style, kindness etc. Love him so much.
+              </li>
+              <li class="date d2011">
+                Still is a King of Music, style, kindness etc. Love him so much.
+              </li>
+              <li class="date d2012">
+                Still is a King of Music, style, kindness etc. Love him so much.
+              </li>
+              <li class="date d2013">
+                Still is a King of Music, style, kindness etc. Love him so much.
+              </li>
+              <li class="date d2014">
+                Still is a King of Music, style, kindness etc. Love him so much.
+              </li>
+              <li class="date d2015">
+                Still is a King of Music, style, kindness etc. Love him so much.
+              </li>
+              <li class="date d2016">
+                Still is a King of Music, style, kindness etc. Love him so much.
+              </li>
+              <li class="date d2017">
+                Still is a King of Music, style, kindness etc. Love him so much.
+              </li>
+              <li class="date d2018">
+                Still is a King of Music, style, kindness etc. Love him so much.
+              </li>
+              <li class="date d2019">
+                Still is a King of Music, style, kindness etc. Love him so much.
+              </li>
+              <li class="date d2020">
+                Still is a King of Music, style, kindness etc. Love him so much.
+              </li>
+              <li class="date d2021">
+                Still is a King of Music, style, kindness etc. Love him so much.
+              </li>
+          </ul>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="music">
+      <div class="container">
+        <h2 class="music__title">BEST SONGS - click to listen to a part of MJ bests.</h2>
+        <div class="grid-block">
+          <div class="song billie_jean">
+            <img src="images/billie_jean.png" alt="" class="jacksonS">
+            <div class="song-bg"></div>
+            <h3 class="song-name">Billie Jean</h3>
+            
+          </div>
+          <div class="song dangerous">
+            <img src="images/dangerous.png" alt="" class="jacksonS">
+            <div class="song-bg"></div>
+            <h3 class="song-name">Dangerous</h3>
+          </div>
+          <div class="song remember_the_time">
+            <img src="images/remember_the_time.png" alt="" class="jacksonS">
+            <div class="song-bg"></div>
+            <h3 class="song-name">Remember The Time</h3>
+          </div>
+          <div class="song rock_with_you">
+            <img src="images/rock_with_you.png" alt="" class="jacksonS">
+            <div class="song-bg"></div>
+            <h3 class="song-name">Rock With You</h3>
+          </div>
+          <div class="song slave_to_the">
+            <img src="images/slave_to_the.png" alt="" class="jacksonS">
+            <div class="song-bg"></div>
+            <h3 class="song-name">Slave To The Rhythm</h3>
+          </div>
+          <div class="song smooth_criminal">
+            <img src="images/smooth_criminal.png" alt="" class="jacksonS">
+            <div class="song-bg"></div>
+            <h3 class="song-name">Smooth Criminal</h3>
+          </div>
+          <div class="song the_way_you_make">
+            <img src="images/the_way_you_make.png" alt="" class="jacksonS">
+            <div class="song-bg"></div>
+            <h3 class="song-name">The Way You Make Me Feel</h3>
+          </div>
+          <div class="song thriller">
+            <img src="images/thriller.png" alt="" class="jacksonS">
+            <div class="song-bg"></div>
+            <h3 class="song-name">Thriller</h3>
+          </div>
+          <div class="song who_is_it">
+            <img src="images/who_is_it.png" alt="" class="jacksonS">
+            <div class="song-bg"></div>
+            <h3 class="song-name">Who is it</h3>
+          </div>
+          
         </div>
       </div>
     </div>
@@ -44,6 +377,9 @@
     <div class="fixed">
       <img class= "fixed__img" src="images/jackson_icon2.png" alt="">
     </div>
+    <span class="hide__text" onclick="hideText()">></span>
+    <span   class="show__text" onclick="showText()"><</span>
+    <h3 class="fixed__text"> Watch the full interview on our <a href="https://hemansings.com/">Youtube!</a></h3>
     <script src="js/index.js"></script>
   </body>
 </html>
