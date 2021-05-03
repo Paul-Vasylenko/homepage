@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
     setTimeout(()=>{
         const jacksonImg = document.querySelector(".header__img");
-        jacksonImg.style.opacity = 1;
+        jacksonImg.style.opacity = 0.6;
     }, 200)
 })
 
@@ -91,11 +91,19 @@ const slideValue = document.querySelector(".rangeValue span");
 const inputSlide = document.querySelector(".field input");
 const infoDate = document.querySelector(".info__date");
 infoDate.innerText = inputSlide.value;
-
 inputSlide.oninput = (()=>{
     let value = inputSlide.value;
     slideValue.textContent = value;
-    slideValue.style.left = 8.3 + Math.abs((1958-value)*1.32) + "%";
+    if(window.screen.width>=1360){
+        slideValue.style.left = 8.3 + Math.abs((1958-value)*1.32) + "%";
+    }
+    else if(window.screen.width>=1150){
+        slideValue.style.left = 9.9 + Math.abs((1958-value)*1.27) + "%";
+    }
+    else if(window.screen.width>=1000){
+        slideValue.style.left = 9.9 + Math.abs((1958-value)*1.27) + "%";
+    }
+    
     infoDate.innerText = inputSlide.value;
 
 
@@ -128,6 +136,7 @@ new Audio("songs/who_is_it.mp3")]
 const musics = document.querySelectorAll(".song");
 for(let musicblock of musics){
    musicblock.onclick = ()=>{
+       
        for(let item of classes){
         for(let i=0;i<9;i++){
         document.querySelector(".song."+item+" .song-bg").style.opacity=0.6;
@@ -149,5 +158,15 @@ for(let musicblock of musics){
                 toPlay.play();
            }
        }
+   }
+   musicblock.onmouseover = (e) => {
+    const div = e.srcElement;
+    const divClasses = div.classList;
+    const domDivImg = document.querySelector(".song."+divClasses[1]+" img");
+    domDivImg.style.opacity=0.8;
+    const domDivBg = document.querySelector(".song."+divClasses[1]+" .song-bg");
+    domDivBg.style.opacity=0;
+    const domDivP = document.querySelector(".song."+divClasses[1]+" h3");
+    domDivP.style.color = "#3988ff"; 
    }
 }
