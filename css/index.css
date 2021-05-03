@@ -428,18 +428,19 @@ ul li::before {
 	display: grid;
 	grid-template-columns: 290px 290px 290px;
 	column-gap: 45px;
-	grid-template-rows: 290px 290px 290px;
+	grid-template-rows: 323px 323px 323px;
 	row-gap: 60px;
 }
 .song {
 	position: relative;
+	width: 290px;
 }
 .song-bg {
 	position: absolute;
 	top: 0;
 	opacity: 0.6;
 	width: 100%;
-	height: 100%;
+	height: 290px;
 	left: 0;
 	background: rgba(0, 0, 0, 0.6);
 	backdrop-filter: blur(104px);
@@ -559,6 +560,11 @@ ul li::before {
 		grid-template-columns: 290px 290px;
 		max-width: 625px;
 	}
+	.grid-block #last {
+		width: 290px;
+		height: 321px;
+		margin: 0 0 0 165px;
+	}
 	.song-bg {
 		height: 290px;
 	}
@@ -604,11 +610,6 @@ ul li::before {
 @media (max-width: 850px) {
 	.quote h3 {
 		font-size: 21px;
-	}
-	.grid-block #last {
-		width: 290px;
-		height: 321px;
-		margin: 0 0 0 165px;
 	}
 }
 
