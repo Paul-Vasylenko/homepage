@@ -129,16 +129,24 @@ const musics = document.querySelectorAll(".song");
 for(let musicblock of musics){
    musicblock.onclick = ()=>{
        for(let item of classes){
+        for(let i=0;i<9;i++){
+        document.querySelector(".song."+item+" .song-bg").style.opacity=0.6;
+        document.querySelector(".song."+item+" img").style.opacity=0.2;
+        document.querySelector(".song."+item+" .song-name").style.color = "inherit";
+        }
            if(musicblock.classList.contains(item)){
                let toPlay;
                for(let i=0;i<9;i++){
                    if(audiosStr[i].includes(item)){
+                    document.querySelector(".song."+item+" .song-bg").style.opacity=0;
+                    document.querySelector(".song."+item+" img").style.opacity=1;
+                    document.querySelector(".song."+item+" .song-name").style.color = "#3988ff";
                     toPlay=audios[i];
                    }else{
-                       audios[i].pause();
+                        audios[i].pause();
                    }
                 }
-               toPlay.play();
+                toPlay.play();
            }
        }
    }

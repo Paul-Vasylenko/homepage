@@ -463,3 +463,36 @@ ul li::before {
 	text-align: center;
 	margin-left: 170px;
 }
+
+.footer {
+	width: 100%;
+	height: 150px;
+	background-color: #050c26;
+}
+.footer h3 {
+	color: white;
+	padding-left: 15px;
+	padding-top: 20px;
+	font-size: 21px;
+}
+.footer-block {
+	padding-left: 15px;
+	padding-top: 20px;
+	display: flex;
+}
+.link {
+	padding: 0 15px;
+	color: aliceblue;
+	text-decoration: none;
+	font-size: x-large;
+	margin-bottom: 5px;
+}
+.footer hr {
+	border: 0.5px solid white;
+}
+.footer p {
+	display: inline-block;
+	width: auto;
+	color: white;
+	float: right;
+}
