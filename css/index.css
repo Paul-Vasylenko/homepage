@@ -504,7 +504,6 @@ ul li::before {
 	display: inline-block;
 	width: auto;
 	color: white;
-	float: right;
 }
 
 @media (max-width: 1360px) {
@@ -659,8 +658,6 @@ ul li::before {
 }
 
 @media (max-width: 540px) {
-	.show__text {
-	}
 	.hide__text {
 		right: 516px;
 		bottom: 23px;
