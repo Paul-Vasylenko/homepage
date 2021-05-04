@@ -7,15 +7,11 @@
     <meta name="description" content="Michael Jackson is alive and is back">
     <meta name="keywords" content="Michael Jackson, HTML, CSS, BSA21">
     <meta name="author" content="Paul Vasylenko">
-    <link rel="mj" href="https://www.facebook.com/michaeljackson" type="text/html">
-	  <link rel="mj" href="https://www.michaeljackson.com/">
-	  <link rel="mj" href="https://www.instagram.com/michaeljackson/?hl=ru">
-    <link rel="mj" href="https://www.youtube.com/michaeljackson">
     <meta property="og:url" content="https://paul-vasylenko.github.io/homepage/">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Michael Jackson - alive???</title>
   </head>
-  <body>
+  <main>
     <div class="header">
       <div class="container">
         <div class="flex-div">
@@ -31,7 +27,6 @@
               <h3 class="header__subtitle">Jackson: "I am alive and ready to give the last concert!"</h3>
             </div>
             <a href="#slider" class="button"><p>Go!</p></a>
-            <p class="header__button-title">Read the interview</p>
           </div>
           <div class="header__right">
             <img class="header__img" src="images/jackson_side.png" alt="">
@@ -40,6 +35,7 @@
         </div>
       </div>
     </div>
+  
     <div class="slider" id ="slider">
       <div class="container">
         <h2 class="slider__title">Exclusive: Michael Jackson gives an interview after so long!</h2>
@@ -104,7 +100,7 @@
         
       </div>
     </div>
-
+    
     <div class="timeline">
       <div class="container">
         <h2 class="timeline__title">~TIMELINE OF JACKSON~</h2>
@@ -118,7 +114,7 @@
           </div>
           <div class="field">
             <div class="value left">1958</div>
-            <input type="range" min="1958" max="2021" value="1958" steps="1">
+            <input type="range" min="1958" max="2021" value="1958" step="1">
             <div class="value right">2021</div>
           </div>
           <p class="add one"> KING OF POP</p>
@@ -347,7 +343,7 @@
         </div>
       </div>
     </div>
-
+    <main>
     <div class="music">
       <div class="container">
         <h2 class="music__title">BEST SONGS - click to listen to a part of MJ bests.</h2>
@@ -393,7 +389,7 @@
             <div class="song-bg"></div>
             <h3 class="song-name">Thriller</h3>
           </div>
-          <div class="song who_is_it">
+          <div class="song who_is_it" id="last">
             <img src="images/who_is_it.png" alt="" class="jacksonS">
             <div class="song-bg"></div>
             <h3 class="song-name">Who is it</h3>
@@ -402,7 +398,7 @@
         </div>
       </div>
     </div>
-
+    </main>
     <div class="footer">
       <div class="container">
         <h3>Contact Michael - he is going to answer to some of your questions</h3>
@@ -416,13 +412,17 @@
         <p>All rights are served</p>
       </div>
     </div>
-
-    <div class="fixed">
-      <img class= "fixed__img" src="images/jackson_icon2.png" alt="">
-    </div>
-    <span class="hide__text" onclick="hideText()">></span>
-    <span   class="show__text" onclick="showText()"><</span>
-    <h3 class="fixed__text"> Watch the full interview on our <a href="https://hemansings.com/">Youtube!</a></h3>
+    
+      <div class="obolochka">
+        <div class="fixed">
+          <img class= "fixed__img" src="images/jackson_icon2.png" alt="">
+        </div>
+        
+        <span class="hide__text" onclick="hideText()">></span>
+        <span   class="show__text" onclick="showText()">&lt;</span>
+        <h3 class="fixed__text"> Watch the full interview on our <a href="https://hemansings.com/">Youtube!</a></h3>
+        
+      </div>
     <script src="js/index.js"></script>
   </body>
 </html>
