@@ -2,7 +2,11 @@
 document.addEventListener('DOMContentLoaded', function(){
     setTimeout(()=>{
         const jacksonImg = document.querySelector(".header__img");
-        jacksonImg.style.opacity = 0.6;
+        if(window.screen.width>=420){
+            jacksonImg.style.opacity = 1;
+        }else{
+            jacksonImg.style.opacity = 0.6;
+        }
     }, 200)
 })
 
