@@ -1,3 +1,4 @@
+//IMAGE APPEAR ANIMATION
 document.addEventListener('DOMContentLoaded', function(){
     setTimeout(()=>{
         const jacksonImg = document.querySelector(".header__img");
@@ -8,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function(){
 const sounds = ["auuuu.mp3", "he-heee.mp3", "he-heee2.mp3", "nananana.mp3", "shamone.mp3"]
 const soundBtn = document.querySelector(".fixed");
 soundBtn.addEventListener('click', soundWork)
+//RIGHT BOTTOM CONER BUTTON
 
 function soundWork(){
     let num = Math.round(Math.random() * 4);
@@ -40,6 +42,7 @@ function soundWork(){
         soundImg.style.border = "1px solid red"
     },timeout)
 }
+//SLIDER-INTERVIEW
 
 
 let slideIndex = 1;
@@ -86,6 +89,7 @@ function showText(){
     showbtn.style.display="none";
 }
 
+//SLIDER-TIMELINE
 
 const slideValue = document.querySelector(".rangeValue span");
 const inputSlide = document.querySelector(".field input");
@@ -120,6 +124,7 @@ inputSlide.oninput = (()=>{
     }
     
 })
+//MUSIC BLOCK
 
 const classes = ["billie_jean","dangerous","remember_the_time","rock_with_you",
 "slave_to_the", "smooth_criminal","the_way_you_make","thriller","who_is_it"];
